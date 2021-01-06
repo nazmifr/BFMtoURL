@@ -1,4 +1,4 @@
-# bfmtv-rmcdecouvertes-downloader
+# bfmtv-rmcdecouverte-downloader
 
 The youtube-dl parser for BFMTV* is currently broken (as of 01/2021), this is an implementation of @moimadmax method as explained in his comment [here](https://github.com/ytdl-org/youtube-dl/issues/18595#issuecomment-449752824) that works for single and batch download. 
 
