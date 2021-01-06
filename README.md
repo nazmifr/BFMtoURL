@@ -1,4 +1,4 @@
-# bfmtv-rmcdecouverte-downloader
+# BFMTV to URL converter (for youtube-dl)
 
 The youtube-dl parser for BFMTV* is currently broken (as of 01/2021), this is an implementation of @moimadmax method as explained in his comment [here](https://github.com/ytdl-org/youtube-dl/issues/18595#issuecomment-449752824) that works for single and batch download. 
 
@@ -9,6 +9,8 @@ The youtube-dl parser for BFMTV* is currently broken (as of 01/2021), this is an
 This bookmarklet displays the youtube-dl command to type to download this TV/Radio program and the URL (useful to play it in VLC mpv... or use another extractor)
 
 Just select the code below and drop it on your bookmark bar (disabled by default on firefox --- > Customize > Toolbars (in the bottom) > tick Personal bar)
+
+<a href="javascript:void((function(){let iddecomptea=document.querySelectorAll('[data-account]')[0];if(iddecomptea===undefined){var iddecompte=document.querySelectorAll('[accountid]')[0].getAttribute("accountid")}else{var iddecompte=iddecomptea.getAttribute("data-account")}let iddevideo=document.querySelectorAll('[data-video-id]')[0].getAttribute("data-video-id");let urldevideo="http://players.brightcove.net/"+iddecompte+"/default_default/index.html?videoId="+iddevideo;alert('youtube-dl --write-info-json '+urldevideo+'\r\n\r\nURL:\r'+urldevideo)})());">BFMtoURL</a>
 
 ```javascript:void((function(){let iddecomptea=document.querySelectorAll('[data-account]')[0];if(iddecomptea===undefined){var iddecompte=document.querySelectorAll('[accountid]')[0].getAttribute("accountid")}else{var iddecompte=iddecomptea.getAttribute("data-account")}let iddevideo=document.querySelectorAll('[data-video-id]')[0].getAttribute("data-video-id");let urldevideo="http://players.brightcove.net/"+iddecompte+"/default_default/index.html?videoId="+iddevideo;alert('youtube-dl --write-info-json '+urldevideo+'\r\n\r\nURL:\r'+urldevideo)})());```
 
