@@ -5,7 +5,7 @@ The youtube-dl parser for BFMTV* is broken as of 01/2021, this is an implementat
 \*Works for their whole network: [BFMTV](https://bfmtv.com), [BFM Business](https://bfmtv.com/economie), [RMC](https://rmc.bfmtv.com/), [RMC Sport](https://rmcsport.bfmtv.com/), [RMC Découverte](https://rmcdecouverte.bfmtv.com/), [RMC Story](https://rmcstory.bfmtv.com/), [BFM Régions](https://www.bfmtv.com/regions/), [BFM Bourse](https://www.tradingsat.com/)
 
 
-| Bookmarklet       | Shell OneLiner |
+| Bookmarklet       | Bash Shell Script |
 |-------------------|----------------|
 | ![](BFMtoURL.png) | W.I.P          |
 
