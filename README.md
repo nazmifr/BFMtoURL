@@ -1,4 +1,4 @@
-# BFMTV to URL converter (for youtube-dl)
+# BFMTV player to brightcove URL converter (for youtube-dl)
 
 The youtube-dl parser for BFMTV* is broken as of 01/2021, this is an implementation of *moimadmax* method as explained in his [comment](https://github.com/ytdl-org/youtube-dl/issues/18595#issuecomment-449752824) that works for single item and batch download. 
 
