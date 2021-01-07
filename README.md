@@ -1,6 +1,8 @@
-# BFMTV player to brightcove URL converter (for youtube-dl)
+# BFMTV player to brightcove URL converter (for youtube-dl, VLC, mpv)
 
 The youtube-dl parser for BFMTV* is broken as of 01/2021, this is an implementation of *moimadmax* method as explained in his [comment](https://github.com/ytdl-org/youtube-dl/issues/18595#issuecomment-449752824) that works for single item and batch download. 
+
+You can now eaisily watch your favorite BFMTV* replay programs in VLC or download them to view them while offline (during a plane travel for instance)
 
 \*Works for their whole network: [BFMTV](https://bfmtv.com), [BFM Business](https://bfmtv.com/economie), [RMC](https://rmc.bfmtv.com/), [RMC Sport](https://rmcsport.bfmtv.com/), [RMC Découverte](https://rmcdecouverte.bfmtv.com/), [RMC Story](https://rmcstory.bfmtv.com/), [BFM Régions](https://www.bfmtv.com/regions/), [BFM Bourse](https://www.tradingsat.com/)
 
@@ -15,13 +17,13 @@ The youtube-dl parser for BFMTV* is broken as of 01/2021, this is an implementat
 - several solutions for each use case
 - error reporting (so that I know when an update is needed)
 - argument input with STDIN, as a batch text file (one line = one bfmtv link) or as argument
-- bookmarklet and simple js grabber for easy tinkering
+- bookmarklet and simple js grabber for easy tinkering in your web browser
 
 ## TODO:
 
 - add BFM icons in the README
 - error reporting on the js version (not an emergency as it is obvious to the user when he doesn't get the link he asked for)
-- someone who can repair the native youtubedl parser
+- tell someone who can repair the native youtubedl parser
 
 ## Bookmarklet
 
