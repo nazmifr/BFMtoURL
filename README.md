@@ -19,6 +19,7 @@ The youtube-dl parser for BFMTV* is broken as of 01/2021, this is an implementat
 
 ## TODO:
 
+- add BFM icons in the README
 - error reporting on the js version
 - someone who can repair the native youtubedl parser
 
