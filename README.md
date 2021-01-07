@@ -41,7 +41,15 @@ The current shell implementation outputs an empty line for unavailable videos (a
   ``` ./BFMtoURL.sh https://www.bfmtv.com/paris/replay-emissions/bonjour-paris/comment-est-transporte-le-vaccin-une-entreprise-de-rueil-malmaison-a-mis-au-point-une-boite-refrigeree_VN-202101060214.html ```	
 		
 ### If you download a lot of BFMTV videos	
-	you can easily create an alias for the script to get the url or give it to youtubedl	
+you can easily create an alias for the script to get the url or give it to youtubedl, if the .sh is in your home directory (~), type:
+
+```
+
+alias bfmtv="bash ~/BFMtoURL.sh"
+
+```
+
+to create a temporary alias for the script, you may now type ```bfmtv``` in the shell instead, to make it permanent, see: https://www.tecmint.com/create-alias-in-linux/#Creating%20Permanent%20Aliases
 		
 	
 
