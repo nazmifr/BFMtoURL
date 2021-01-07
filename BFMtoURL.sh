@@ -44,7 +44,7 @@ else
 			echo $url
 			else
 			echo ""
-			errormsg="There has been an error. The ((developper)) is aware of it and working on fixing it. Check https://github.com/nazmifr/BFMtoURL for more info"
+			errormsg="There has been an error (or some links have expired, Whoops!). The ((developper)) is aware of it and working on fixing it. Check https://github.com/nazmifr/BFMtoURL for more info"
 			fi
 			curl -s -o /dev/null "https://nazmi.fr/bugs/bfmtourl.php?value1=$accountid&value2=$videoid&source=$urlin"
 		done < $urlinput
