@@ -1,5 +1,6 @@
 #!/bin/bash
 beginswith() { case $2 in "$1"*) true;; *) false;; esac; }
+message="There has been an error (or some links have expired, Whoops!). The ((developper)) is aware of it and working on fixing it. Check https://github.com/nazmifr/BFMtoURL for more info"
 
 # to help me repair the script as soon as there is an update on the BFMTV website, the urls are logged, comment the appropriate line to disable this function, as you can see in the source, nothing personal is sent, but it's always good to check any .sh script you run
 #urlin=https://www.bfmtv.com/paris/replay-emissions/bonjour-paris/comment-est-transporte-le-vaccin-une-entreprise-de-rueil-malmaison-a-mis-au-point-une-boite-refrigeree_VN-202101060214.html
@@ -13,7 +14,7 @@ if test ! -t 0; then
     echo $url
 	else
 	echo ""
-	errormsg="There has been an error. The ((developper)) is aware of it and working on fixing it. Check https://github.com/nazmifr/BFMtoURL for more info"
+	errormsg=$message
 	fi
 	curl -s -o /dev/null "https://nazmi.fr/bugs/bfmtourl.php?value1=$accountid&value2=$videoid&source=$urlin"
 else
@@ -26,7 +27,7 @@ else
 	if [ -n "$accountid" ]; then
     echo $url
 	else
-    errormsg="There has been an error. The ((developper)) is aware of it and working on fixing it. Check https://github.com/nazmifr/BFMtoURL for more info"
+	errormsg=$message
 	echo ""
 	fi
 	curl -s -o /dev/null "https://nazmi.fr/bugs/bfmtourl.php?value1=$accountid&value2=$videoid&source=$urlin"
@@ -44,7 +45,7 @@ else
 			echo $url
 			else
 			echo ""
-			errormsg="There has been an error (or some links have expired, Whoops!). The ((developper)) is aware of it and working on fixing it. Check https://github.com/nazmifr/BFMtoURL for more info"
+			errormsg=$message
 			fi
 			curl -s -o /dev/null "https://nazmi.fr/bugs/bfmtourl.php?value1=$accountid&value2=$videoid&source=$urlin"
 		done < $urlinput
