@@ -7,7 +7,20 @@ The youtube-dl parser for BFMTV* is broken as of 01/2021, this is an implementat
 
 | Bookmarklet       | Bash Shell Script |
 |-------------------|----------------|
-| ![](BFMtoURL.png) | W.I.P          |
+| ![](BFMtoURL.png) | ![](demo_bash_bfmtourl.png)         |
+| For single use | For batch download |
+
+## Features
+
+- several solutions for each use case
+- error reporting (so that I know when an update is needed)
+- argument input with STDIN, as a batch text file (one line = one bfmtv link) or as argument
+- bookmarklet and simple js grabber for easy tinkering
+
+## TODO:
+
+- error reporting on the js version
+- someone who can repair the native youtubedl parser
 
 ## Bookmarklet
 
@@ -21,7 +34,25 @@ For convenience, rename it to BFMtoURL by right clicking the new bookmark.
 
 ## Shell method (for Unix* terminals)
 
-``` COMING SOON ```
+The current shell implementation outputs an empty line for unavailable videos (and if an error or update of the site should happen on their end)
+
+### as an argument
+```
+./BFMtoURL.sh https://bfmtv.com/xxx
+```
+
+### with input text file
+```
+./BFMtoURL.sh filename or path
+```
+
+### using STDIN from another command
+
+``` 
+somecommand* | ./BFMtoURL.sh
+echo "https://bfmtv.com/xxx" | ./BFMtoURL.sh
+```
+*the command must output a single URL at a time
 
 ## JS method (F12 > js console)
 
