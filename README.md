@@ -36,7 +36,7 @@ For convenience, rename it to BFMtoURL by right clicking the new bookmark.
 
 Download BFMtoURL.sh, go to the directory of the download with a terminal and do ```sudo chmod +x``` to make it executable, you can now use it as such.	
 
-The current shell implementation outputs an empty line for unavailable videos (and if an error or update of the site should happen on their end), this behaviour is easily editable (three of the ``` echo "" ``` to comment (l. 15,30,46)).
+The current shell implementation outputs an empty line for unavailable videos (and if an error or update of the site should happen on their end), this behaviour is easily editable (three of the ``` echo "" ``` to comment with ``` # ``` (l. 15,30,46)).
 
   ``` ./BFMtoURL.sh https://www.bfmtv.com/paris/replay-emissions/bonjour-paris/comment-est-transporte-le-vaccin-une-entreprise-de-rueil-malmaison-a-mis-au-point-une-boite-refrigeree_VN-202101060214.html ```	
 		
